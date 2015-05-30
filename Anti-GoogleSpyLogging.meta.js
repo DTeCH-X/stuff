@@ -7,7 +7,7 @@
 // @icon         http://www.tunisie-news.com/high-tech/images/Google+FBI.jpg
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js
 // @include      http*://www.google.com/*
-// @updateURL    https://openuserjs.org/src/libs/DTeCH/AGSL.meta.js
+// @updateURL    https://github.com/DTeCH-X/stuff/raw/master/Anti-GoogleSpyLogging.meta.js
 // @downloadURL  https://github.com/DTeCH-X/stuff/raw/master/Anti-GoogleSpyLogging.user.js
 // @grant        none
 // ==/UserScript==
