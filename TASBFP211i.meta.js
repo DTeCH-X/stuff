@@ -16,6 +16,6 @@
 // @grant         unsafeWindow
 // @version       2.1.1i
 // @author        DTeCH
-// @updateURL     https://openuserjs.org/src/libs/DTeCH/DTXSP.meta.js
+// @updateURL     https://cdn.rawgit.com/DTeCH-X/stuff/master/TASBFP211i.meta.js
 // @downloadURL   https://cdn.rawgit.com/DTeCH-X/stuff/master/TASBFP211i.user.js
 // ==/UserScript==
