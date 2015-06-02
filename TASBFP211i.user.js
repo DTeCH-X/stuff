@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          TA Script Bug-Fixes Pack - (DTeCH)
-// @namespace     TAScriptBugFixesPack
+// @namespace     DTTAScriptBugFixesPack
 // @icon          http://eistee82.github.io/ta_simv2/icon.png
 // @description   Maelstrom, Basescanner, CNCOpt (Offence), Coords, Combat Sim, ZWaves, Who's Online, Tunnel Info, Resource Trade Window, ReplayShare, TA Fixes, TA Base Upgrade Tool, & Zoom
 // @include       http*://prodgame*.alliances.commandandconquer.com/*/index.aspx*
