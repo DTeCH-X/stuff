@@ -1,0 +1,13 @@
+// ==UserScript==
+// @name        C&C:TA Coords Button - DTeCH
+// @namespace   DTCNCTACoordsButtonAll
+// @description Copy & Paste selected world coords to chat or message
+// @include     https://prodgame*.alliances.commandandconquer.com/*/index.aspx*
+// @version     2.0.2
+// @author      DTeCH, Bruce Doan, Chiantii
+// @icon        http://eistee82.github.io/ta_simv2/icon.png
+// @updateURL   https://cdn.rawgit.com/DTeCH-X/stuff/master/DTTACB.meta.js
+// @downloadURL https://cdn.rawgit.com/DTeCH-X/stuff/master/DTTACB.user.js
+// ==/UserScript==
+
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('t{(5(){4 Q=5(){t{5 B(){b.a("C&C:1y 1q L K S T.");4 6={m:1x,J:5(){4 $i=8.V.1f.1g().1h().1o().1p();4 $d=$i.1u().1v();4 9=[];9.A($d.z.D(0,$d.U));9.A("[I]"+6.m.W()+":"+6.m.X()+"[/I]");9.A($d.z.D($d.15,$d.z.1a));$i.1d(9.1e(" "))}};o(!p.q.r.s.c.y){p.q.r.s.c.y=p.q.r.s.c.H;p.q.r.s.c.H=5(u){6.m=u;o(3.M!=1){3.M=1;3.G=(v 8.w.1P.E(v 8.w.Y.Z(0))).10({11:2});12(4 i 13 3){o(3[i]&&3[i].14=="E"){4 x=v 8.w.16.K("17 L");x.18("19",5(){6.J()});3[i].F(x)}}}3.y(u);1b(u.1c()){l k.j.n.g.1i:l k.j.n.g.1j:l k.j.n.g.1k:l k.j.n.g.1l:3.F(3.G);1m;1n:}}}}}f(e){b.a("B: ",e)}5 h(){t{o(1r 8!=="1s"){B()}1t{N.O(h,P)}}f(e){b.a("h: ",e)}}N.O(h,P)};t{4 7=R.1z("1A");7.1B="("+Q.1C()+")();";7.1D="1E/1F";R.1G("1H")[0].1I(7)}f(e){b.a("7: 1J 1K: ",e)}})()}f(e){b.a("1L 1M 1N-1O 1w: ",e)}',62,114,'|||this|var|function|coordsButton|CNCTACoordsButtonAll|qx|result|log|console|prototype|||catch|EObjectType|CNCTACoordsButtonAll_checkIfLoaded||Vis|ClientLib|case|selectedBase|VisObject|if|webfrontend|gui|region|RegionCityMenu|try|selectedVisObject|new|ui|button|__coordsButton_showMenu|value|push|createCoordsButton||substring|Composite|add|__newComposite|showMenu|coords|pasteCoords|Button|Coords|__coordsButton_initialized|window|setTimeout|1000|CNCTACoordsButtonAll_main|document|All|loaded|selectionStart|core|get_RawX|get_RawY|layout|VBox|set|padding|for|in|basename|selectionEnd|form|Paste|addListener|execute|length|switch|get_VisObjectType|setValue|join|Init|getApplication|getChat|RegionPointOfInterest|RegionRuin|RegionHubControl|RegionHubServer|break|default|getChatWidget|getEditable|Alliances|typeof|undefined|else|getContentElement|getDomElement|Pack|null|Tiberium|createElement|script|innerHTML|toString|type|text|javascript|getElementsByTagName|head|appendChild|init|error|TA|Script|Bug|Fixes|container'.split('|'),0,{}))
