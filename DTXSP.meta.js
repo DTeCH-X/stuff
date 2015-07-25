@@ -17,6 +17,6 @@
 // @grant         metadata
 // @version       2.1.2a
 // @author        DTeCH
-// @updateURL     DTXSP.meta.js
-// @downloadURL   DTXSP212a.user.js
+// @updateURL     https://cdn.rawgit.com/DTeCH-X/stuff/master/DTXSP.meta.js
+// @downloadURL   https://cdn.rawgit.com/DTeCH-X/stuff/master/DTXSP212a.user.js
 // ==/UserScript==
