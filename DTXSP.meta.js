@@ -15,8 +15,8 @@
 // @grant         GM_updatingEnabled
 // @grant         unsafeWindow
 // @grant         metadata
-// @version       2.2.6
+// @version       2.4.5
 // @author        DTeCH
 // @updateURL     https://cdn.rawgit.com/DTeCH-X/stuff/master/DTXSP.meta.js
-// @downloadURL   https://cdn.rawgit.com/DTeCH-X/stuff/master/DTXSP226.user.js
+// @downloadURL   https://cdn.rawgit.com/DTeCH-X/stuff/master/DTXSP245.user.js
 // ==/UserScript==
