@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          TA Script Bug-Fixes Pack v2.4.8 - (DTeCH)
+// @name          TA Script Bug-Fixes Pack - (DTeCH)
 // @namespace     TAScriptBugFixesPack
 // @icon          http://eistee82.github.io/ta_simv2/icon.png
 // @description   MaelstromTools Dev, Basescanner, X-Ray, Coords, Combat Sim, ZWaves, Who's Online, Tunnel Info, Chat Colorizer, ReplayShare, TA Fixes, Resource Trade Window, & TA Base Upgrade Tool
@@ -15,8 +15,8 @@
 // @grant         GM_updatingEnabled
 // @grant         unsafeWindow
 // @grant         metadata
-// @version       2.4.8
+// @version       2.4.9
 // @author        DTeCH
 // @updateURL     https://cdn.rawgit.com/DTeCH-X/stuff/master/DTXSP.meta.js
-// @downloadURL   https://cdn.rawgit.com/DTeCH-X/stuff/master/DTXSP248.user.js
+// @downloadURL   https://cdn.rawgit.com/DTeCH-X/stuff/master/DTXSP249.user.js
 // ==/UserScript==
