@@ -7,7 +7,7 @@
 // @icon         http://www.listsforall.com/wp-content/uploads/2015/10/PrimeWireAg.png
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js
 // @include      http*://*.primewire.ag/*
-// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/PRWIC5771.meta.js
+// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/PRWIC577.meta.js
 // @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/PRWIC577.user.js
 // @grant        GM_addStyle
 // ==/UserScript== 
