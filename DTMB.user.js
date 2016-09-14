@@ -2,7 +2,7 @@
 // @name         MafiaBattle Auto-Collector
 // @namespace    https://www.mafiabattle.com
 // @icon         https://www.mafiabattle.com/images/favicon/default.png
-// @version      1.9.8
+// @version      1.9.9
 // @description  Try to take over the world in MafiaBattle!
 // @author       DTeCH
 // @match        https://www.mafiabattle.com/partner/iframe/*
@@ -88,7 +88,7 @@ try {
             timerDiv.setAttribute("id", "countdown");
             timerDiv.setAttribute("class", "rightstats");
             timerDiv.innerHTML = "05:00";
-            timerDiv.setAttribute('style','font-weight: bold; font-size: 30px; color:floralwhite; position: absolute; top:151px; left:32px;');
+            timerDiv.setAttribute('style','font-weight: bold; font-size: 30px; color:floralwhite; position: absolute; top:151px; right:32px;');
             var scriptAMO0 = document.createElement("script");
             scriptAMO0.innerHTML = "(" + mainMB.toString() + ")();";
             scriptAMO0.type = "text/javascript";
