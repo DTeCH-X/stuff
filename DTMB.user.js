@@ -5,7 +5,7 @@
 // @version      1.9.8
 // @description  Try to take over the world in MafiaBattle!
 // @author       DTeCH
-// @match        https://www.mafiabattle.com/partner/iframe/5086
+// @match        https://www.mafiabattle.com/partner/iframe/*
 // @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB.meta.js
 // @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB.user.js
 // @grant        none
