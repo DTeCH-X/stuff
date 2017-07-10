@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         MafiaBattle Auto-Collector v2.6.4
+// @name         MafiaBattle Auto-Collector v2.6.5
 // @namespace    https://www.mafiabattle.com
 // @icon         https://www.mafiabattle.com/images/favicon/default.png
-// @version      2.6.4
+// @version      2.6.5
 // @description  Try to take over the world in MafiaBattle!
 // @author       DTeCH
 // @match        https://www.mafiabattle.com/partner/iframe/*
@@ -40,8 +40,6 @@ try {
 //                    if ($("#dialog_redlight_rooms > div.main > div.roompage.open.page_3 > div.buttons_wide > div:contains('Start working!')")) {
 //                        cmd('redlight:work',{'room':'3'});
 //                    }
-                    cmd('object:collect',{'type':'redlight'});
-                    redlight_capacity = 0;
                     if (in_tutorial_step == 10) { tutorial_step(20); }
                     cmd('object:collect',{'type':'moneypress'});
                     moneypress_capacity = 0;
@@ -49,13 +47,15 @@ try {
 //                    ammunitionfactory_capacity = 0;
 //                    play_sound('collect_ammunition',0.7);
 //                    play_sound('collect_cash',0.7);
+                    cmd('object:collect',{'type':'nightclub'});
+                    nightclub_iconity = 0;
+                    nightclub_capacity = 0;
+                    count_five(1);
                     if ((thirdCollect === 0) || (thirdCollect === 1)) {
                         thirdCollect++;
                     } else {
-                        cmd('object:collect',{'type':'nightclub'});
-                        nightclub_iconity = 0;
-                        nightclub_capacity = 0;
-                        count_five(1);
+                        cmd('object:collect',{'type':'redlight'});
+                        redlight_capacity = 0;
                         thirdCollect = 0;
                         console.log("MafiaBattle: Auto-Collect thirdCollect: ", thirdCollect);
                     }
