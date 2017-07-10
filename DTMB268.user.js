@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         MafiaBattle Auto-Collector v2.6.7
+// @name         MafiaBattle Auto-Collector v2.6.8
 // @namespace    https://www.mafiabattle.com
 // @icon         https://www.mafiabattle.com/images/favicon/default.png
-// @version      2.6.7
+// @version      2.6.8
 // @description  Try to take over the world in MafiaBattle!
 // @author       DTeCH
 // @match        https://www.mafiabattle.com/partner/iframe/*
-// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB267.meta.js
-// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB267.user.js
+// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB268.meta.js
+// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB268.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -79,7 +79,7 @@ try {
                     if (!isNaN(timeoutMyOswego2)) {
                         clearTimeout(timeoutMyOswego2);
                     }
-////////                    Jail_Breaker1();
+                    Jail_Breaker1();
                 } catch (e) {
                     console.log("MafiaBattle_checkIfLoaded: ", e);
                     window.setTimeout(MafiaBattle_checkIfLoaded, 5000);
@@ -140,6 +140,7 @@ try {
                         } else {
                             var everyJailedPlayer = document.querySelectorAll("#jail_jail div.jailed.user_box");
                             var htmlString = "";
+                            var ignorePlayer = 0;
                             var htmlEnabledString = "";
                             var IDs = [];
                             IDs = [];
@@ -147,7 +148,21 @@ try {
                                 htmlString = $("#" + everyJailedPlayer[i].id).html().toString();
                                 htmlEnabledString = $("#" + everyJailedPlayer[i].id + ".break_free").hasClass('disabled');
                                 console.log("MafiaBattle: Jail_Breaker1 hasClass: ", htmlEnabledString);
-                                if((htmlString.indexOf("DTeCH") !== -1) || ($("#" + everyJailedPlayer[i].id + " div.break_free").hasClass('disabled')) || (getTimeLeft($("#" + everyJailedPlayer[i].id + " div.time_left.data_countdown").text()) < 11)){
+                                if (Number($("#" + everyJailedPlayer[i].id + " > div.time_left.data_countdown").attr( "data-cdtimer" )) < 11) {
+                                    ignorePlayer = 1;
+                                    console.log("MafiaBattle: Jail_Breaker1 countdown " + everyJailedPlayer[i].id + ": ", ignorePlayer);
+                                } else {
+                                    ignorePlayer = 0;
+                                    console.log("MafiaBattle: Jail_Breaker1 countdown " + everyJailedPlayer[i].id + ": ", ignorePlayer);
+                                }
+                                if (($("#" + everyJailedPlayer[i].id + " > div.break_free").attr( "style" ).contains("display: none")) || ($("#" + everyJailedPlayer[i].id + " > div.break_free").attr( "style" ).contains("display:none"))) {
+                                    ignorePlayer = 1;
+                                    console.log("MafiaBattle: Jail_Breaker1 Displayed " + everyJailedPlayer[i].id + ": ", ignorePlayer);
+                                } else {
+                                    ignorePlayer = 0;
+                                    console.log("MafiaBattle: Jail_Breaker1 Displayed " + everyJailedPlayer[i].id + ": ", ignorePlayer);
+                                }
+                                if((htmlString.indexOf("DTeCH") !== -1) || (ignorePlayer == 1) || ($("#" + everyJailedPlayer[i].id + " div.break_free").hasClass('disabled')) || (getTimeLeft($("#" + everyJailedPlayer[i].id + " div.time_left.data_countdown").text()) < 11)){
                                 } else {
                                     IDs.push(everyJailedPlayer[i].id.split('_')[2]);
                                 }
