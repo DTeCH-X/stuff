@@ -155,7 +155,7 @@ try {
                                     ignorePlayer = 0;
                                     console.log("MafiaBattle: Jail_Breaker1 countdown " + everyJailedPlayer[i].id + ": ", ignorePlayer);
                                 }
-                                if (($("#" + everyJailedPlayer[i].id + " > div.break_free").attr( "style" ).display == 'none') || ($("#" + everyJailedPlayer[i].id + " > div.break_free").attr( "style" ).display == '')) {
+                                if (($("#" + everyJailedPlayer[i].id + " > div.break_free").attr( "style" ).display == 'none') || ($("#" + everyJailedPlayer[i].id + " > div.break_free").attr( "style" ).display === '')) {
                                     ignorePlayer = 1;
                                     console.log("MafiaBattle: Jail_Breaker1 Displayed " + everyJailedPlayer[i].id + ": ", ignorePlayer);
                                 } else {
