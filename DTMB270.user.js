@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         MafiaBattle Auto-Collector v2.7.0
+// @name         MafiaBattle Auto-Collector v2.7.6
 // @namespace    https://www.mafiabattle.com
 // @icon         https://www.mafiabattle.com/images/favicon/default.png
-// @version      2.7.0
+// @version      2.7.6
 // @description  Try to take over the world in MafiaBattle!
 // @author       DTeCH
 // @match        https://www.mafiabattle.com/partner/iframe/*
-// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB270.meta.js
-// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB270.user.js
+// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB276.meta.js
+// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB276.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -155,7 +155,7 @@ try {
                                     ignorePlayer = 0;
                                     console.log("MafiaBattle: Jail_Breaker1 countdown " + everyJailedPlayer[i].id + ": ", ignorePlayer);
                                 }
-                                if (($("#" + everyJailedPlayer[i].id + " > div.break_free").attr( "style" ).display == 'none') || ($("#" + everyJailedPlayer[i].id + " > div.break_free").get(0).style.display === 'none')) {
+                                if (($("#" + everyJailedPlayer[i].id + " > div.break_free").is(":visible") === true) || ($("#" + everyJailedPlayer[i].id + " > div.break_free").hasClass('disabled')) || ($("#" + everyJailedPlayer[i].id + " > div.break_free").css('display') == 'none')) {
                                     ignorePlayer = 1;
                                     console.log("MafiaBattle: Jail_Breaker1 Displayed " + everyJailedPlayer[i].id + ": ", ignorePlayer);
                                 } else {
