@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         MafiaBattle Auto-Collector v2.6.6
+// @name         MafiaBattle Auto-Collector v2.6.7
 // @namespace    https://www.mafiabattle.com
 // @icon         https://www.mafiabattle.com/images/favicon/default.png
-// @version      2.6.6
+// @version      2.6.7
 // @description  Try to take over the world in MafiaBattle!
 // @author       DTeCH
 // @match        https://www.mafiabattle.com/partner/iframe/*
-// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB266.meta.js
-// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB266.user.js
+// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB267.meta.js
+// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB267.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -52,8 +52,8 @@ try {
                     if (in_tutorial_step == 10) { tutorial_step(20); }
                     cmd('object:collect',{'type':'moneypress'});
                     moneypress_capacity = 0;
-//                    cmd('object:collect',{'type':'ammunitionfactory'});
-//                    ammunitionfactory_capacity = 0;
+                    cmd('object:collect',{'type':'ammunitionfactory'});
+                    ammunitionfactory_capacity = 0;
 //                    play_sound('collect_ammunition',0.7);
 //                    play_sound('collect_cash',0.7);
                     cmd('object:collect',{'type':'nightclub'});
@@ -185,9 +185,9 @@ try {
             }
 
             function breakOutNow(item) {
-				var target1 = item.split('_');
-				cmd('jail:breakfree',{'user':target1[2]},true);
-				close_dialog('notification');
+		var target1 = item.split('_');
+		cmd('jail:breakfree',{'user':target1[2]},true);
+		close_dialog('notification');
                 console.log("MafiaBattle: Jail_Breaker1 Element1: ", item);
                 console.log("MafiaBattle: Jail_Breaker1");
                 console.log("MafiaBattle: Jail_Breaker1 target1: ", target1);
