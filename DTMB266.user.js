@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         MafiaBattle Auto-Collector v2.6.5
+// @name         MafiaBattle Auto-Collector v2.6.6
 // @namespace    https://www.mafiabattle.com
 // @icon         https://www.mafiabattle.com/images/favicon/default.png
-// @version      2.6.5
+// @version      2.6.6
 // @description  Try to take over the world in MafiaBattle!
 // @author       DTeCH
 // @match        https://www.mafiabattle.com/partner/iframe/*
-// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB265.meta.js
-// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB265.user.js
+// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB266.meta.js
+// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB266.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -39,6 +39,15 @@ try {
 //                    }
 //                    if ($("#dialog_redlight_rooms > div.main > div.roompage.open.page_3 > div.buttons_wide > div:contains('Start working!')")) {
 //                        cmd('redlight:work',{'room':'3'});
+/                    }
+                    if ($("#dialog_redlight_rooms > div.main > div.roompage.open.page_4 > div.buttons_wide > div:contains('Start working!')")) {
+                        cmd('redlight:work',{'room':'4'});
+                    }
+                    if ($("#dialog_redlight_rooms > div.main > div.roompage.open.page_5 > div.buttons_wide > div:contains('Start working!')")) {
+                        cmd('redlight:work',{'room':'5'});
+                    }
+//                    if ($("#dialog_redlight_rooms > div.main > div.roompage.open.page_6 > div.buttons_wide > div:contains('Start working!')")) {
+//                        cmd('redlight:work',{'room':'6'});
 //                    }
                     if (in_tutorial_step == 10) { tutorial_step(20); }
                     cmd('object:collect',{'type':'moneypress'});
