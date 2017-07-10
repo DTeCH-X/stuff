@@ -39,7 +39,7 @@ try {
 //                    }
 //                    if ($("#dialog_redlight_rooms > div.main > div.roompage.open.page_3 > div.buttons_wide > div:contains('Start working!')")) {
 //                        cmd('redlight:work',{'room':'3'});
-/                    }
+//                    }
                     if ($("#dialog_redlight_rooms > div.main > div.roompage.open.page_4 > div.buttons_wide > div:contains('Start working!')")) {
                         cmd('redlight:work',{'room':'4'});
                     }
