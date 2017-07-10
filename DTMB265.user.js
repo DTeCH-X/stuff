@@ -6,8 +6,8 @@
 // @description  Try to take over the world in MafiaBattle!
 // @author       DTeCH
 // @match        https://www.mafiabattle.com/partner/iframe/*
-// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB263.meta.js
-// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB263.user.js
+// @updateURL    https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB265.meta.js
+// @downloadURL  https://cdn.rawgit.com/DTeCH-X/stuff/master/DTMB265.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
